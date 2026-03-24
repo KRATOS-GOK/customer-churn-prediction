@@ -1,52 +1,47 @@
-# 🤖 Gemini Chatbot (Streamlit + LangChain)
+# 📊 Customer Churn Prediction
 
-An interactive AI chatbot built using **Streamlit**, **LangChain**, and **Google Gemini API**. This app allows users to ask questions and receive real-time responses with customizable model settings.
+A machine learning project that predicts whether a customer is likely to leave (churn) or stay with a company based on historical data.
 
 ---
 
 ## 📌 Overview
 
-This project demonstrates how to integrate **Google Generative AI (Gemini)** with **LangChain** and deploy it as a simple web app using **Streamlit**.
+Customer churn prediction is crucial for businesses to retain customers and reduce revenue loss. This project uses machine learning algorithms to analyze customer behavior and predict churn.
 
-Users can:
-- Enter their Google API key
-- Select Gemini models
-- Adjust response creativity and length
-- Ask questions and get AI-generated answers instantly
+The model helps businesses:
+- Identify at-risk customers  
+- Take proactive retention actions  
+- Improve customer satisfaction  
 
 ---
 
 ## 🚀 Features
 
-- 💬 Interactive chatbot interface  
-- 🤖 Google Gemini AI integration  
-- ⚙️ Customizable parameters:
-  - Model selection  
-  - Temperature control  
-  - Max token output  
-- 🔐 Secure API key input  
-- 📄 Prompt-based query handling  
-- ⚡ Fast and lightweight UI  
+- 📊 Data preprocessing and cleaning  
+- 📈 Exploratory Data Analysis (EDA)  
+- 🤖 Machine Learning model training  
+- 📉 Model evaluation (accuracy, confusion matrix, etc.)  
+- 🔍 Feature importance analysis  
 
 ---
 
 ## 🛠️ Tech Stack
 
 - Python  
-- Streamlit  
-- LangChain  
-- Google Generative AI (Gemini API)  
-- python-dotenv  
+- Pandas  
+- NumPy  
+- Matplotlib / Seaborn  
+- Scikit-learn  
+- Jupyter Notebook  
 
 ---
 
 ## 📂 Project Structure
 
 ```
-📁 gemini-chatbot
-│── main.py
-│── .env
-│── requirements.txt
+📁 customer-churn-prediction
+│── customer-churn-prediction.ipynb
+│── dataset.csv (if included)
 │── README.md
 ```
 
@@ -57,100 +52,83 @@ Users can:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/gemini-chatbot.git
-cd gemini-chatbot
+git clone https://github.com/your-username/customer-churn-prediction.git
+cd customer-churn-prediction
 ```
 
 ---
 
-### 2. Create Virtual Environment
+### 2. Install Dependencies
 
 ```bash
-python -m venv venv
-```
-
-Activate it:
-
-**Windows**
-```bash
-venv\Scripts\activate
-```
-
-**Mac/Linux**
-```bash
-source venv/bin/activate
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 ```
 
 ---
 
-### 3. Install Dependencies
+### 3. Run the Notebook
 
 ```bash
-pip install -r requirements.txt
+jupyter notebook
+```
+
+Open:
+```
+customer-churn-prediction.ipynb
 ```
 
 ---
 
-### 4. Setup Environment Variables
+## 📊 Workflow
 
-Create a `.env` file in the root directory and add:
-
-```
-LANGCHAIN_API_KEY=your_langchain_api_key
-```
-
----
-
-## ▶️ Run the Application
-
-```bash
-streamlit run main.py
-```
+1. Data Loading  
+2. Data Cleaning  
+3. Exploratory Data Analysis (EDA)  
+4. Feature Engineering  
+5. Model Training  
+6. Model Evaluation  
+7. Prediction  
 
 ---
 
-## 💡 How It Works
+## 🤖 Machine Learning Models Used
 
-1. Loads environment variables using `dotenv`
-2. Defines a prompt template using LangChain
-3. Initializes the Gemini model
-4. Processes user input through a pipeline:
-
-```
-Prompt → Gemini Model → Output Parser
-```
-
-5. Displays the response using Streamlit UI
+- Logistic Regression  
+- Decision Tree  
+- Random Forest *(if used)*  
 
 ---
 
-## 🧠 Available Models
+## 📈 Evaluation Metrics
 
-- gemini-3-flash-preview  
-- gemini-1.5-turbo  
-- gemini-2  
-- gemini-2-100b  
+- Accuracy  
+- Precision  
+- Recall  
+- F1 Score  
+- Confusion Matrix  
 
 ---
 
-## 📸 Screenshot
+## 📸 Visualizations
 
-_Add your app screenshot here_
+- Correlation heatmap  
+- Distribution plots  
+- Feature importance graphs  
 
 ---
 
 ## 🔧 Future Improvements
 
-- Chat history support  
-- Streaming responses  
-- Voice-based interaction  
-- Deployment on cloud  
+- Hyperparameter tuning  
+- Deploy model as a web app  
+- Use advanced models (XGBoost, Neural Networks)  
+- Real-time prediction system  
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to fork and submit a pull request.
+Contributions are welcome! Feel free to fork this repo and submit a pull request.
 
 ---
 
@@ -168,4 +146,4 @@ This project is licensed under the MIT License.
 
 ## ⭐ Support
 
-If you found this helpful, give it a ⭐ on GitHub!
+If you like this project, give it a ⭐ on GitHub!
